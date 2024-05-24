@@ -1,7 +1,7 @@
 import Sidebar from '@/components/layout/Sidebar';
 import Header from '@/components/layout/Header';
 import { RoleGate } from '@/components/role-gate-server';
-import { UserRole } from "@prisma/client";
+import { UserRole } from '@prisma/client';
 
 export default function AdminLayout({ children }) {
   return (
@@ -17,6 +17,5 @@ export default function AdminLayout({ children }) {
         </main>
       </main>
     </RoleGate>
-
   );
 }
