@@ -7,7 +7,7 @@ import authStyles from '@/components/css/authLayout.module.css';
 import ComponentLevelLoader from '@/components/Loader';
 import { useState } from 'react';
 import Image from 'next/image';
-import { register } from '@/actions/register';
+import { register } from '@/actions/auth actions/register';
 
 export default function Register() {
   const [error, setError] = useState('');
@@ -152,6 +152,9 @@ export default function Register() {
                 name='track'
                 className={authStyles.auth__select}
               >
+                <option value='Frontend development'>
+                  choose track
+                </option>
                 <option value='Frontend development'>
                   Frontend development
                 </option>
